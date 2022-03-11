@@ -1,0 +1,230 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.mynavbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #ffffff;
+  color: #adafb1;
+}
+.mynavbar ul li {
+  margin: 0px 5px;
+}
+
+/* .navbar-collapse .navbar-nav li a.active {
+  background-color: #7383bf !important;
+  color: #ffffff !important;
+} */
+.navbar-collapse .navbar-nav .nav-item a:hover {
+  background-color: #7383bf !important;
+  color: #ffffff !important;
+}
+
+.my-carousel img {
+  width: 100%;
+}
+.about-us {
+  padding: 48px 0px;
+  margin: 0px 48px;
+  text-align: center;
+  /* width: 60%; */
+  display: flex;
+  justify-content: space-between;
+  background-image: url(./assets/istockphoto-1321452985-170667a-Copy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  background-position: 50% 76px;
+}
+#about {
+  /* background-color: #7383bf; */
+  color: #ffffff;
+}
+.about-content {
+  padding: 70px 20px 10px;
+}
+.about-img,
+.about-content {
+  width: 50%;
+}
+.about-us .about-img img {
+  width: 100%;
+}
+.about-us h1 {
+  margin: 10px 0px 40px;
+  font-weight: bold;
+}
+.about-us h5 {
+  margin: 10px 0px;
+  line-height: 30px;
+}
+/* contact */
+.contact {
+  padding-top: 50px;
+  background: #dfdfdf;
+}
+.contact > div {
+  justify-content: space-between;
+  display: flex;
+  min-width: 980px;
+    width: 80%;
+    margin: auto;
+    padding: 69px 0px;
+    flex-wrap: wrap;
+}
+.contact .heading h1,.location h2{
+  font-weight: bold;
+  color: #666666;
+  font-size: 32px;
+}
+.contact .heading p{
+color: #43484E;  
+font-size: 14px;
+}
+.contact-form,
+.contact-info {
+  background: #f6f6f6;
+  width: 48%;
+  text-align: center;
+  padding: 20px;
+}
+.contact-info img{
+  width: 100%;
+}
+.contact-info p {
+  margin: 0%;
+  color: #7383bf;
+  font-weight: bold;
+}
+.contact-info p a {
+  text-decoration: none;
+  color: #7383bf;
+}
+.contact-info .icons a{
+  font-size: 20px ;
+  margin: 0px 4px;
+  text-decoration: none;
+  color: #A2A2A2;
+  border-radius: 50%;
+  border: 1px solid #A2A2A2;
+  background: transparent;
+  padding: 7px;
+}
+form .submit {
+  width: 90px;
+  height: 40px;
+  background-color: #7383bf;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+}
+input {
+  width: 49%;
+  height: 36px;
+  margin: 10px auto;
+  padding: 0px 10px;
+  border: 1px solid #ccc;
+}
+textarea {
+  padding: 10px;
+  height: 120px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+/* location */
+.location {
+  text-align: center;
+  margin: 50px 0px;
+}
+.location h2 {
+  margin: 20px 0px;
+}
+.location iframe {
+  width: 100%;
+}
+
+/* footer */
+.footer,
+.social-links {
+  background-color: #7383bf;
+  color: #ffffff;
+}
+.social-links .container {
+  /* padding: 20px 115px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links {
+  border-bottom: 1px solid #ffffff;
+}
+.footer .links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .links ul {
+  list-style: none;
+}
+.footer .links ul .li-heading,
+.li-heading {
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid #adafb1;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* copyrights */
+.copyrights {
+  border-top: 1px solid #ffffff;
+
+  background: #7383bf;
+  color: #f2f2f2;
+}
+@media only screen and (max-width:1000px){
+  .contact > div{
+    width: 90%;
+    min-width: 600px;
+    flex-wrap: wrap;
+  }
+  
+}
+@media only screen and (max-width:770px){
+  .my-carousel img{
+    height: 300px;
+  }
+  .about-us{
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+  .about-img{
+    display: none;
+  }.about-content{
+    width: 90%;
+    margin: 25px auto;
+  }
+  .about-content{
+    background-color: rgba(0, 0, 0, 0.39);
+  }
+  .about-content h5{
+    font-size: 16px;
+  }
+  .contact > div{
+    width: 90%;
+    min-width: 300px;
+  }
+  .contact-form, .contact-info{
+    width: 100%;
+  }
+  
+}
